@@ -22,17 +22,9 @@ The MVP is intended to demonstrate a believable end-to-end journey. It is not ye
 
 ## Initial technology direction
 
-The proposed baseline is:
+The initial web app uses Next.js App Router, React, TypeScript, and custom CSS. Vercel is the intended preview/deployment option. The first screens use mock content only; Supabase/PostgreSQL, authentication, live AI services, and enterprise integrations remain future decisions.
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- GitHub for source control and collaboration
-- Vercel for preview and deployment
-- Mock data for the initial MVP
-- Supabase/PostgreSQL to be evaluated for a later integration phase
-
-Confirm the actual installed versions and existing project conventions before changing dependencies or generating implementation code. Do not introduce a backend or external service solely because it appears in this proposed direction.
+Do not introduce a backend or external service solely because it appears in a proposed direction.
 
 ## Start here
 
@@ -47,9 +39,9 @@ Before implementing a task, read:
 
 If a document conflicts with an approved issue or a newer decision recorded by the project owner, stop and clarify rather than guessing. Update the relevant documentation when an approved decision changes.
 
-## Suggested local setup
+## Local setup
 
-These steps assume a Next.js project has already been scaffolded.
+The initial Next.js application is scaffolded in this repository.
 
 ```bash
 npm install
@@ -58,7 +50,14 @@ npm run dev
 
 Open the local URL printed by Next.js, normally `http://localhost:3000`.
 
-Check available scripts in `package.json` before running lint, type-check, or build commands; do not assume scripts exist until verified.
+Available checks:
+
+```bash
+npm run typecheck
+npm run build
+```
+
+The homepage is at `/`. The `/gcc`, `/talent`, and `/si` routes are clearly labelled persona-workspace previews, not production portals.
 
 ## Suggested repository layout
 
