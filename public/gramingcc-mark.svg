@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 170" fill="none">
+  <defs>
+    <linearGradient id="hill" x1="20" y1="145" x2="158" y2="95" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F6A46"/>
+      <stop offset="1" stop-color="#8FB83E"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 143C47 126 74 119 100 120C124 121 144 111 163 94C151 125 125 143 94 150H20Z" fill="url(#hill)"/>
+  <path d="M24 149C55 132 88 132 113 137C133 141 151 131 163 119" stroke="#F5F2E8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M73 125C69 103 68 81 72 55" stroke="#8B4A17" stroke-width="7" stroke-linecap="round"/>
+  <path d="M72 83L48 62M72 99L42 90M72 72L89 45M72 111L94 89" stroke="#8B4A17" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#2F7B43">
+    <ellipse cx="46" cy="58" rx="10" ry="19" transform="rotate(-43 46 58)"/>
+    <ellipse cx="34" cy="85" rx="10" ry="18" transform="rotate(-69 34 85)"/>
+    <ellipse cx="59" cy="37" rx="9" ry="17" transform="rotate(-26 59 37)"/>
+    <ellipse cx="79" cy="34" rx="9" ry="18" transform="rotate(24 79 34)"/>
+    <ellipse cx="91" cy="60" rx="9" ry="18" transform="rotate(42 91 60)"/>
+    <ellipse cx="44" cy="106" rx="8" ry="15" transform="rotate(-73 44 106)"/>
+    <ellipse cx="94" cy="87" rx="8" ry="16" transform="rotate(42 94 87)"/>
+    <ellipse cx="66" cy="17" rx="7" ry="15" transform="rotate(-8 66 17)"/>
+    <ellipse cx="102" cy="38" rx="7" ry="15" transform="rotate(42 102 38)"/>
+  </g>
+  <g fill="#0F5A3D">
+    <path d="M114 120V88L125 79L136 88V120H114Z"/>
+    <path d="M132 120V70L143 60L154 70V120H132Z"/>
+    <path d="M150 120V91L159 84L168 91V120H150Z"/>
+  </g>
+  <g fill="#E6F0D9">
+    <rect x="120" y="91" width="3" height="5" rx="1"/>
+    <rect x="128" y="91" width="3" height="5" rx="1"/>
+    <rect x="120" y="101" width="3" height="5" rx="1"/>
+    <rect x="128" y="101" width="3" height="5" rx="1"/>
+    <rect x="139" y="74" width="3" height="5" rx="1"/>
+    <rect x="147" y="74" width="3" height="5" rx="1"/>
+    <rect x="139" y="85" width="3" height="5" rx="1"/>
+    <rect x="147" y="85" width="3" height="5" rx="1"/>
+    <rect x="139" y="96" width="3" height="5" rx="1"/>
+    <rect x="147" y="96" width="3" height="5" rx="1"/>
+    <rect x="156" y="95" width="3" height="5" rx="1"/>
+    <rect x="162" y="95" width="3" height="5" rx="1"/>
+    <rect x="156" y="105" width="3" height="5" rx="1"/>
+    <rect x="162" y="105" width="3" height="5" rx="1"/>
+  </g>
+  <circle cx="72" cy="81" r="5" fill="#D07A2D"/>
+</svg>
