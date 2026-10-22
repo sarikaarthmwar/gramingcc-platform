@@ -130,3 +130,17 @@ See [`docs/developer-guide.md`](docs/developer-guide.md) and [`docs/project/work
 ## Product ownership
 
 The product owner approves scope, user journeys, priorities, and material product decisions. The technical lead coordinates architecture, shared contracts, code quality, and integration. Developers own their assigned modules and must raise conflicts early.
+
+
+## Interview simulator
+
+The audio/video Talent interview simulator is available at `/talent/interview`. It supports three entry-level GCC role tracks (Junior Data Analyst, QA / Test Automation Associate, and AI Operations Associate), with mixed, technical, and behavioural/situational practice formats.
+
+- **Demo mode:** uses prepared role-specific questions and transparent heuristic feedback; it does not call an AI model.
+- **Live AI mode:** generates questions and returns rubric-based practice feedback through the server-side `/api/interview` route.
+- **Configuration:** set `OPENAI_API_KEY` as a server-side environment variable in Vercel. Optionally set `OPENAI_MODEL`; the route defaults to `gpt-4.1-mini`. Never expose the key in browser code.
+- **Audio/video:** browser microphone and optional camera access are used to record answers. Video clips remain in the browser session and are not uploaded to the AI reviewer. Audio is sent to the server-side transcription route when configured. Transcripts can be edited before feedback.
+- **Privacy:** the prototype does not persist answers. Learners should not enter personal or confidential information.
+- **Limitations:** the simulator is for learning, not hiring decisions or validated psychometric assessment. Validate practical ability with work samples and mentor review. Live AI feedback may be wrong or incomplete.
+
+For local development, add the variables in `.env.example` to `.env.local`, then run `npm run dev`. Run `npm run typecheck` and `npm run build` before merging.
