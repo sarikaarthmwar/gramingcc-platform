@@ -221,6 +221,7 @@ export default function HomePage() {
           <h2 id="approach-title">We don’t just find talent.<br /><span>We help make talent ready.</span></h2>
           <p>Access is not the whole problem. The missing link is deployment-readiness — made visible, built deliberately and connected to confirmed demand.</p>
           <a href="#personas" className="approach-link">Explore the three workspaces <ArrowIcon /></a>
+          <Link href="/talent/interview" className="homepage-interview-cta">Try the interview simulator <span aria-hidden="true">↗</span><small>Practise realistic questions · Get structured feedback · Plan your next round</small></Link>
         </div>
         <div className="approach-flow">
           <div className="flow-step">
