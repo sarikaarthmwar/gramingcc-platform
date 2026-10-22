@@ -221,6 +221,7 @@ export default function HomePage() {
           <h2 id="approach-title">We don’t just find talent.<br /><span>We help make talent ready.</span></h2>
           <p>Access is not the whole problem. The missing link is deployment-readiness — made visible, built deliberately and connected to confirmed demand.</p>
           <a href="#personas" className="approach-link">Explore the three workspaces <ArrowIcon /></a>
+          <Link href="/talent/assessment" className="homepage-assessment-cta">Try the AI skill assessment <span aria-hidden="true">↗</span><small>Generate questions · See your gaps · Get a learning plan</small></Link>
         </div>
         <div className="approach-flow">
           <div className="flow-step">
@@ -233,8 +234,8 @@ export default function HomePage() {
           <div className="flow-step">
             <span className="flow-number">02</span>
             <span className="flow-icon">⌘</span>
-            <h3>Map the gap</h3>
-            <p>Compare requirements with skills and existing evidence.</p>
+            <h3>Assess with AI</h3>
+            <p>Use practical, role-specific questions to evaluate demonstrated skills and make gaps visible.</p>
           </div>
           <div className="flow-connector" aria-hidden="true">→</div>
           <div className="flow-step">
