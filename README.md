@@ -93,6 +93,16 @@ gramingcc-platform/
 
 This is a recommended starting structure, not a mandate to reorganize a working repository without review.
 
+## AI skill assessment journey
+
+The homepage's demand-to-readiness flow now links to `/talent/assessment`. The assessment prototype includes three role tracks, question generation, learner responses, a skill-gap report and a focused learning plan.
+
+- **Demo mode:** sample questions plus a transparent heuristic evaluator; no model API call.
+- **Live AI mode:** Next.js server route at `/api/assessment` generates role-specific questions and evaluates answers with the OpenAI Responses API.
+- **Configuration:** set `OPENAI_API_KEY` as a server-side environment variable in Vercel. Optionally set `OPENAI_MODEL` (defaults to `gpt-4.1-mini`). Never expose the key to browser code.
+- **Local setup:** copy `.env.example` to `.env.local`, add your key, then run `npm run dev`. The demo mode works without a key.
+- **Limitations:** role benchmarks are illustrative. AI feedback is formative, not a hiring decision or validated psychometric assessment. Live mode has not been validated for production use; practical tasks, mentor review, consent, retention controls and bias/accessibility testing are required.
+
 ## Collaboration rules
 
 - `main` must remain stable and deployable.
